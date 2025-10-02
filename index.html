@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayAllForOne - Nos Réseaux</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome (pour les icônes) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Style personnalisé pour le corps et les effets */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a0b2e, #1f1f1f);
+        }
+        
+        /* Effet de lueur sur les cartes de lien */
+        .social-link {
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #4a2f64; /* Bordure subtile */
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(155, 89, 182, 0.7); /* Lueur violette */
+            border-color: #9B59B6;
+        }
+
+        /* Animation pour l'apparition du contenu */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        .delay-5 { animation-delay: 1s; }
+        .delay-6 { animation-delay: 1.2s; }
+    </style>
+</head>
+<body class="text-white min-h-screen flex items-center justify-center p-4">
+
+    <main class="w-full max-w-2xl mx-auto text-center">
+        <!-- Logo -->
+        <div class="mb-8 fade-in">
+            <img 
+                src="https://playallforone.com/wp-content/uploads/2023/12/logo-PAFO-1.png" 
+                alt="Logo PlayAllForOne" 
+                class="w-48 md:w-64 mx-auto"
+                onerror="this.onerror=null;this.src='https://placehold.co/256x100/1a0b2e/FFFFFF?text=PlayAllForOne';"
+            >
+        </div>
+
+        <!-- Titre -->
+        <h1 class="text-3xl md:text-4xl font-bold mb-4 fade-in delay-1" style="color: #9B59B6;">Rejoignez notre communauté</h1>
+        <p class="text-gray-300 mb-12 fade-in delay-2">Restez connectés avec nous sur toutes nos plateformes !</p>
+
+        <!-- Grille de liens -->
+        <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-4">
+
+            <!-- Discord -->
+            <a href="https://discord.gg/playallforone" target="_blank" class="social-link bg-gray-800/50 p-4 flex flex-col items-center justify-center fade-in delay-3 aspect-square" style="background-color: rgba(31, 25, 41, 0.8);">
+                <i class="fab fa-discord text-4xl mb-2" style="color: #7289DA;"></i>
+                <span class="font-semibold text-base">Discord</span>
+            </a>
+
+            <!-- Twitch -->
+            <a href="https://www.twitch.tv/playallforone" target="_blank" class="social-link bg-gray-800/50 p-4 flex flex-col items-center justify-center fade-in delay-4 aspect-square" style="background-color: rgba(31, 25, 41, 0.8);">
+                <i class="fab fa-twitch text-4xl mb-2" style="color: #9146FF;"></i>
+                <span class="font-semibold text-base">Twitch</span>
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://twitter.com/PlayAllForOne_" target="_blank" class="social-link bg-gray-800/50 p-4 flex flex-col items-center justify-center fade-in delay-5 aspect-square" style="background-color: rgba(31, 25, 41, 0.8);">
+                <i class="fa-brands fa-x-twitter text-4xl mb-2"></i>
+                <span class="font-semibold text-base">X</span>
+            </a>
+            
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/channel/UCyM2d87Xw2rWbQhA-O0-d_g" target="_blank" class="social-link bg-gray-800/50 p-4 flex flex-col items-center justify-center fade-in delay-3 sm:delay-6 aspect-square" style="background-color: rgba(31, 25, 41, 0.8);">
+                <i class="fab fa-youtube text-4xl mb-2" style="color: #FF0000;"></i>
+                <span class="font-semibold text-base">YouTube</span>
+            </a>
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/playallforone/" target="_blank" class="social-link bg-gray-800/50 p-4 flex flex-col items-center justify-center fade-in delay-4 sm:delay-2 lg:delay-5 aspect-square" style="background-color: rgba(31, 25, 41, 0.8);">
+                <i class="fab fa-instagram text-4xl mb-2" style="color: #E4405F;"></i>
+                <span class="font-semibold text-base">Instagram</span>
+            </a>
+            
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@playallforone_" target="_blank" class="social-link bg-gray-800/50 p-4 flex flex-col items-center justify-center fade-in delay-5 sm:delay-1 lg:delay-6 aspect-square" style="background-color: rgba(31, 25, 41, 0.8);">
+                <i class="fab fa-tiktok text-4xl mb-2"></i>
+                <span class="font-semibold text-base">TikTok</span>
+            </a>
+
+        </div>
+
+        <footer class="mt-16 text-gray-500 text-sm fade-in delay-6">
+            <p>&copy; 2024 PlayAllForOne - Tous droits réservés</p>
+        </footer>
+    </main>
+  
+</body>
+</html>
